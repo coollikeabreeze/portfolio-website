@@ -1,0 +1,15 @@
+{
+  "name": "khan-website",
+  "version": "1.0.0",
+  "description": "khan portfolio website",
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "scripts": {
+    "test": "echo Error: no test specified && exit 1"
+  },
+  "author": "Andrea Khan",
+  "license": "ISC"
+}
