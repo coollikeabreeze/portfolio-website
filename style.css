@@ -1,0 +1,22 @@
+body {
+  background-color: rgb(114, 113, 113)
+}
+
+#page-title {
+  display:flex;
+  flex-direction: row;
+  align-items: flex-end;
+  margin-left: 20px;
+  margin-top: 25px;
+}
+
+#site-title {
+  font-family: 'Lexend Deca', sans-serif;
+  color: white
+
+}
+
+#site-subtitle {
+  font-family: 'Julius Sans One', sans-serif;
+  color: white
+}
