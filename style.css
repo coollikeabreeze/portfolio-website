@@ -1,22 +1,51 @@
 body {
-  background-color: rgb(114, 113, 113)
+  background-color: rgb(65, 64, 64);
+  font-family: 'Quicksand', sans-serif;
+  color: white;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0
 }
 
 #page-title {
-  display:flex;
-  flex-direction: row;
-  align-items: flex-end;
-  margin-left: 20px;
-  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 2vh;
+  margin-top: 20px
 }
 
 #site-title {
   font-family: 'Lexend Deca', sans-serif;
-  color: white
-
+  color: white;
+  font-size: 8vh;
+  letter-spacing: 0.2vh;
+  margin: 0;
+  padding:0
 }
 
 #site-subtitle {
   font-family: 'Julius Sans One', sans-serif;
-  color: white
+  color: white;
+  margin-top: 0px;
+  align-self: left;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: rgb(2, 99, 99)
+}
+
+nav ul {
+  list-style-type: none;
+  flex: 1;
+  text-align: right;
+  padding-right: 30px;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 2vh 3vh
 }
