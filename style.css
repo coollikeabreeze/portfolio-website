@@ -7,21 +7,25 @@ body {
   padding: 0
 }
 
+h1 {
+  font-family: 'Lexend Deca', sans-serif;
+}
+
 #page-title {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-left: 2vh;
-  margin-top: 20px
+  /* margin-left: 2vh;
+  margin-top: 30px; */
+  margin: 5vh 0  0 3vh;
 }
 
 #site-title {
   font-family: 'Lexend Deca', sans-serif;
   color: white;
   font-size: 8vh;
-  letter-spacing: 0.2vh;
   margin: 0;
-  padding:0
+  padding: 0;
 }
 
 #site-subtitle {
@@ -33,19 +37,66 @@ body {
 
 nav {
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  background: rgb(2, 99, 99)
+  justify-content: space-between;
+  align-items: flex-end;
+  background: rgb(2, 99, 99);
+  margin: 0;
+  padding: 0;
+  /* border-bottom: 1px solid #000 */
 }
 
-nav ul {
-  list-style-type: none;
-  flex: 1;
+.nav-links ul{
+  display: flex;
   text-align: right;
   padding-right: 30px;
 }
 
 nav ul li {
+  list-style: none;
   display: inline-block;
-  margin: 2vh 3vh
+  margin: 2vh 0  0 3vh;
+  padding: 10px
+}
+
+nav ul li:hover {
+  background-color: white;
+  padding: 10px;
+  color: rgb(2, 99, 99);
+  border-bottom: 1px solid #000;
+}
+
+
+.toggle-button {
+  position: absolute;
+  top: 6.5rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+@media (max-width: 800px) {
+  .toggle-button {
+    display: flex;
+  }
+
+  .nav-links {
+    display: none
+  }
+
+  .nav-items {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%
+  }
 }
