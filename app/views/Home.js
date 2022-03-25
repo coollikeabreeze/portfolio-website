@@ -50,11 +50,12 @@ export default class extends AbstractView {
           </div>
 
           <div class="card">
+          <a src="https://github.com/coollikeabreeze/stackathon-daatafi">
             <img
               width="400"
               height="250"
-              src="https://www.youtube.com/embed/QaOyU8KFd0A?controls=0"
-            />
+              src="/public/daatafi-img.png"/>
+            </a>
             <div class="container">
               <h4><b>Daatafi</b></h4>
               <p></p>
