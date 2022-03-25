@@ -1,41 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+import AbstractView from "./AbstractView.js"
+import NavBar from "../components/NavBar.js"
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;1,300&family=Julius+Sans+One&family=Lexend+Deca&family=Quicksand&family=Work+Sans:wght@300&display=swap"
-      rel="stylesheet"
-    />
+export default class extends AbstractView {
+  constructor(params) {
+    super(params)
+    this.setTitle("Home")
+  }
 
-    <title>Andrea Khan</title>
-  </head>
-  <body>
-    <nav>
-      <a href="#" class="toggle-button">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </a>
-      <div class="nav-links">
-        <ul class="nav-items">
-          <li>About</li>
-          <li>Projects</li>
-          <li>Contact</li>
-        </ul>
-      </div>
-    </nav>
-
+  async getHtml() {
+    return `
+    ${NavBar()}
     <div id="page-title">
       <div>
       <h1 id="site-title">Andrea Khan
       <hr id ="title-line"></hr>
-    </h1>
+      </h1>
       <h3 class="" id="site-subtitle">Software Engineer</h3>
       <div class="about">
       <p>Brooklyn, NY</p>
@@ -43,16 +22,16 @@
         JavaScript ES6 | React | Redux | Express | SQL |
         Firebase | HTML5 | CSS | TailwindCSS
       </p>
-    </div>
-    </div>
+      </div>
+      </div>
 
-    <div>
-    </div>
+      <div>
+      </div>
 
-    </div>
+      </div>
 
 
-    <div class="body-content">
+      <div class="body-content">
 
       <div class="projects">
         <h1 class="section-title">Projects</h1>
@@ -87,7 +66,7 @@
       <div class="contact">
         <h1 class="section-title">Contact</h1>
       </div>
-    </div>
-    <script src="js/app.js"></script>
-  </body>
-</html>
+      </div>`
+  }
+}
+

@@ -1,0 +1,11 @@
+@import '../app/css/NavBar.css';
+@import '../app/css/Home.css';
+
+body {
+  background-color: rgb(36, 36, 36);
+  font-family: 'Quicksand', sans-serif;
+  color: white;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0
+}
